@@ -11,9 +11,10 @@ function parseInputs(){
 }
 
 function installAwsSam(){
+	echo "Update pip"
+	pip install -U pip >/dev/null 2>&1
 	echo "Install aws-sam-cli ${INPUT_SAM_VERSION}"
 	if [ "${INPUT_SAM_VERSION}" == "latest" ]; then
-		pip install -U pip >/dev/null 2>&1
 		pip install aws-sam-cli >/dev/null 2>&1
 		exitCode=${?}
 		if [ "${exitCode}" -ne 0 ]; then
