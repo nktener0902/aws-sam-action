@@ -25,7 +25,8 @@ function installAwsSam(){
 			echo "Successful install aws-sam-cli ${INPUT_SAM_VERSION}"
 		fi
 	else
-		pip install aws-sam-cli==${INPUT_SAM_VERSION} >/dev/null 2>&1
+		#pip install aws-sam-cli==${INPUT_SAM_VERSION} >/dev/null 2>&1
+		pip install aws-sam-cli==${INPUT_SAM_VERSION}
 		exitCode=${?}
 		if [ "${exitCode}" -ne 0 ]; then
 			echo "Failed to install aws-sam-cli ${INPUT_SAM_VERSION}"
