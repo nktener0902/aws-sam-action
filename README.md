@@ -62,7 +62,7 @@ jobs:
 
 ### Can I take a assume-role?
 
-If you use assume-role, we recommended using awscredswrap!  
+If you use assume-role, we recommended using awscredswrap!
 See: https://github.com/marketplace/actions/aws-assume-role-github-actions#use-as-github-actions
 
 ```yaml
