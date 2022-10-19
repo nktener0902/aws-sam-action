@@ -14,7 +14,7 @@ function installAwsSam(){
 	echo "Install aws-sam-cli ${INPUT_SAM_VERSION}"
 	if [ "${INPUT_SAM_VERSION}" == "latest" ]; then
 		#pip install -U pip >/dev/null 2>&1
-		pip install -U pip
+		#pip install -U pip
 		#pip install aws-sam-cli >/dev/null 2>&1
 		pip install aws-sam-cli
 		exitCode=${?}
